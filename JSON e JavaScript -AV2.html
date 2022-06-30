@@ -1,0 +1,69 @@
+<div id="main">
+    <form action="">
+        
+        <p><strong>Nome </strong><input type="text"></p>
+        <p><strong>Nação </strong><input type="text"></p>
+       
+        <button id="proximo">Criar Personagem </button><br>       
+    </form>
+</div><br>
+
+<form action="">
+        
+    <p><strong>Nome </strong><input type="text"></p>
+    <p><strong>Nação </strong><input type="text"></p>
+   
+    <button id="proximo">Criar Personagem </button><br>       
+</form>
+</div><br>
+
+<form action="">
+        
+    <p><strong>Nome </strong><input type="text"></p>
+    <p><strong>Nação </strong><input type="text"></p>
+   
+    <button id="proximo">Criar Personagem </button><br>       
+</form>
+</div><br>
+
+     
+</form>
+</div><br>
+
+<form action="">
+    <p><strong>Nome </strong><input type="text"></p>
+    <p><strong>Nação </strong><input type="text"></p>
+  
+    
+    
+    <button id="proximo">Criar Personagem </button><br>       
+</form>
+</div><br>
+
+<p>
+    Professor, não consegui fazer o trabalho com o pouco tempo que tenho. 5hs tenho que está de pé mas tentei e me esforcei
+    Caso eu não consiga a média, pode me passar algo para eu não reprovar na matéria
+</p>
+
+
+
+<div id="teste"></div>
+<script>
+
+    var btn = $('#proximo');
+    var teste = $('#teste');
+
+    btn.on('click', function() {
+      $(this).hide();
+      teste.load('parte2.html #teste2 p', completeFunction);
+    });
+
+    function completeFunction(responseText, textStatus, request) {
+      if(textStatus == 'error') {
+          teste.text('Ocorreu um erro: ' +  request.status + ' ' + request.statusText);
+      } 
+    } 
+</script>
+
+
+
